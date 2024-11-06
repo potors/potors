@@ -2,18 +2,7 @@
 
 <sup>Jump to [contact](#contact)</sup>
 
-I'm a self-taught programmer who enjoy the bizarre reality of programming at the 21st century.  
-My fellows spread misinformation about programming on the internet.
-Nothing I can do about it, *buuut* you can hire me!
-They'll ruin your codebase :smiling_imp:, i won't! :innocent:  
-
-I've started *learning* python when me 11 yet :baby:, now me grown up kid :man:  
-But I really started programming at 14 (in the covid pandemic, meaning that I had full time computer access)  
-Now I'm almost 18 :older_man:, messed up with [+10 languages](#experience) and don't have a job.  
-
-I love math and science, messing up with music related stuff, low-level programming and making people happy.  
-As you may have noticed from my profile, I'm from Brazil (south), so english isn't my first language.
-Yes, it's very good for my level, I've immersed myself into foreign content so much that I can even communicate verbally (cogratulations to me :wink:)  
+Yeah man, I'm a dev.
 
 # Experience
 
@@ -40,18 +29,6 @@ Yes, it's very good for my level, I've immersed myself into foreign content so m
 ![godot_engine][badge_godot_engine]
 ![aseprite][badge_aseprite]
 
-I've played with a bunch of languages so far. Procedural, object-oriented, functional and many design patterns such as MVC, MVVM, factories, adapters, builders, etc.  
-
-Although I don't have that much of professional experience, I've built many applications: REST APIs; CLI programs; GUI interfaces (java/raylib); Web pages; Android apps...  
-Motivated by my lack of knowledge, I focused into learning **how things works behind the scenes**, that changed not only the way I program, but the way I live (what a dramatic take).  
-I became more minimalistic and detached. My code will be thrown in the trash anyway. *Less is better*. That kind of thing.  
-
-I use arch linux as daily driver for almost 3 years now, every day leaning more to the console side of the force.  
-Anxious for Arc's browser linux support :pray:  
-Here are my [dotfiles][dotfiles].  
-
-[dotfiles]: https://github.com/powtors/dotfiles
-
 [badge_arch_linux]: https://img.shields.io/badge/arch_linux-1793D1?style=for-the-badge&logo=archlinux&logoColor=fff
 [badge_markdown]: https://img.shields.io/badge/markdown-000?style=for-the-badge&logo=markdown&logoColor=fff
 [badge_c]: https://img.shields.io/badge/c-A8B9CC?style=for-the-badge&logo=c&logoColor=fff
@@ -77,15 +54,15 @@ Here are my [dotfiles][dotfiles].
 
 # Contact
 
-Message me within my [website][contact] or [email me][email] directly (will open external app)  
+Message me within my [website][contact] or [email me][email] yourself!  
 
 [![email][badge_email]][email]
 [![telegram][badge_telegram]][telegram]
 [![instagram][badge_instagram]][instagram]
 [![linkedin][badge_linkedin]][linkedin]
 
-<!-- [contact]: https://powtors.com/contact -->
-[contact]: https://powtors.vercel.app/contact
+<!-- [contact]: https://pitol.dev/contact -->
+[contact]: https://potors.vercel.app/contact
 [email]: mailto:felpofo@proton.me
 [telegram]: https://t.me/powtors
 [instagram]: https://instagram.com/powtors
