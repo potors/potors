@@ -2,8 +2,6 @@
 
 <sup>Jump to [contact](#contact)</sup>
 
-<sup>[Veja meu TCC](https://tcc-pitol.vercel.app/)</sup>
-
 Yeah man, I'm a dev.
 
 # Experience
@@ -61,14 +59,12 @@ Message me within my [website][contact] or [email me][email] yourself!
 [![email][badge_email]][email]
 [![telegram][badge_telegram]][telegram]
 [![instagram][badge_instagram]][instagram]
-[![linkedin][badge_linkedin]][linkedin]
 
 <!-- [contact]: https://pitol.dev/contact -->
 [contact]: https://potors.vercel.app/contact
 [email]: mailto:felpofo@proton.me
 [telegram]: https://t.me/powtors
 [instagram]: https://instagram.com/powtors
-[linkedin]: https://linkedin.com/in/powtors
 
 [badge_email]: https://img.shields.io/badge/email-005FF9?style=for-the-badge&logo=maildotru&logoColor=fff
 [badge_telegram]: https://img.shields.io/badge/telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=fff
