@@ -1,0 +1,50 @@
+// thank you jacob! https://jlodes.com/blog/scss-color-palettes
+
+@use "sass:map";
+
+@function palletize($hue, $saturation, $lightness) {
+    $steps: (
+        "primary": 0,
+        "secondary": 180,
+        "accent": 90
+    );
+
+    $lightnesses: (
+        "foreground": 98%,
+        "lighter": 94%,
+        "light": 90%,
+        "dark": 10%,
+        "darker": 6%,
+        "background": 2%
+    );
+
+    $pallete: ();
+
+    @each $name, $shift in $steps {
+        $pallete: map.merge($pallete, (
+            $name: ($hue + $shift, $saturation, $lightness)
+        ));
+    }
+
+    @each $name, $tone in $lightnesses {
+        $pallete: map.merge($pallete, (
+            $name: ($hue, $saturation, $tone)
+        ));
+    }
+
+    @return $pallete;
+}
+
+$pallete: palletize(220, 70%, 70%);
+
+:root {
+    --primary: #{map.get($pallete, "primary")};
+    --secondary: #{map.get($pallete, "secondary")};
+    --accent: #{map.get($pallete, "accent")};
+    --light: #{map.get($pallete, "light")};
+    --dark: #{map.get($pallete, "dark")};
+    --lighter: #{map.get($pallete, "lighter")};
+    --darker: #{map.get($pallete, "darker")};
+    --background: #{map.get($pallete, "background")};
+    --foreground: #{map.get($pallete, "foreground")};
+}
