@@ -41,6 +41,12 @@
 
         font-size: 1.8rem;
         text-align: center;
+
+        margin: 0 3ch;
+
+        @media only screen and (max-width: 768px) {
+            & { font-size: 1.3rem; }
+        }
     }
 
     a.reach {

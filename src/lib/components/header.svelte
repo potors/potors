@@ -98,4 +98,14 @@
             }
         }
     }
+
+    @media only screen and (max-width: 768px) {
+        nav {
+            display: none;
+        }
+
+        header {
+            justify-content: center;
+        }
+    }
 </style>
