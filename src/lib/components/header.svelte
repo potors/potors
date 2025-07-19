@@ -1,37 +1,16 @@
 <script lang="ts">
-    import { IconContext, GithubLogo, InstagramLogo, TelegramLogo, At } from "phosphor-svelte";
+    import { Social } from "$lib/components";
+
+    let { simple }: {
+        simple?: boolean;
+    } = $props();
 </script>
 
 <header>
-    <h1>
-        <a href="/">pitol.dev</a>
-    </h1>
-    <IconContext values={{ size: "1.70rem" }}>
-        <nav>
-            <ul>
-                <li>
-                    <a href="https://github.com/potors">
-                        <GithubLogo />
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/pitol.dev">
-                        <InstagramLogo />
-                    </a>
-                </li>
-                <li>
-                    <a href="https://t.me/powtors">
-                        <TelegramLogo />
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:contact@pitol.dev">
-                        <At />
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </IconContext>
+    <h1><a href="/">pitol.dev</a></h1>
+    {#if !simple}
+        <Social compact size="1.75rem" hide={["instagram", "kofi"]} />
+    {/if}
 </header>
 
 <style lang="scss">
@@ -42,27 +21,18 @@
 
         padding: 0.75rem 1.25rem;
 
-        border-bottom: 1px solid hsl(var(--dark));
+        border-bottom: 1px solid hsla(var(--dark));
     }
 
     h1 {
         font-size: 2.125em;
         text-align: center;
-
-        a {
-            text-decoration: underline;
-            text-decoration-color: hsl(var(--primary));
-        }
     }
 
     a {
-        text-decoration: none;
-        color: inherit;
-
         transition: 100ms ease-in-out;
 
         &:hover, &:focus {
-            text-decoration: underline;
             text-decoration-color: hsl(var(--secondary));
 
             text-shadow:
@@ -71,41 +41,13 @@
         }
     }
 
-    nav {
-        ul {
-            display: flex;
-            gap: 1rem;
-
-            list-style: none;
-        }
-
-        li {
-            display: flex;
-        }
-
-        a {
-            display: inherit;
-
-            color: hsl(var(--foreground));
-
-            transition: 100ms ease-in-out;
-
-            &:hover, &:focus {
-                background: radial-gradient(circle at center, hsla(var(--secondary), 40%), transparent 75%),
-                            radial-gradient(circle at center, hsla(var(--secondary), 40%), transparent 55%);
-
-                transform: scale(1.05);
-            }
-        }
-    }
-
     @media only screen and (max-width: 768px) {
-        nav {
-            display: none;
-        }
-
         header {
             justify-content: center;
+
+            > :global(:not(:first-child)) {
+                display: none;
+            }
         }
     }
 </style>

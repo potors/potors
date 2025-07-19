@@ -1,6 +1,10 @@
-@use "colors";
+@import "$lib/colors";
 
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+:root {
+    @include colorize(220, 70%, 70%);
+}
 
 html {
     scroll-behavior: smooth;
@@ -21,8 +25,8 @@ html, body {
 }
 
 body {
-    background: hsl(var(--background));
-    color: hsl(var(--foreground));
+    background: hsl(var(--darkest));
+    color: hsl(var(--lightest));
 
     display: flex;
     flex-direction: column;
@@ -30,4 +34,10 @@ body {
     main {
         flex: 1;
     }
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: hsl(var(--primary));
 }

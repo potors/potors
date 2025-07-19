@@ -2,7 +2,7 @@
 
 @use "sass:map";
 
-@function palletize($hue, $saturation, $lightness) {
+@mixin colorize($hue, $saturation, $lightness) {
     $steps: (
         "primary": 0,
         "secondary": 180,
@@ -10,12 +10,12 @@
     );
 
     $lightnesses: (
-        "foreground": 98%,
+        "lightest": 98%,
         "lighter": 94%,
         "light": 90%,
         "dark": 10%,
         "darker": 6%,
-        "background": 2%
+        "darkest": 2%
     );
 
     $pallete: ();
@@ -32,19 +32,13 @@
         ));
     }
 
-    @return $pallete;
-}
-
-$pallete: palletize(220, 70%, 70%);
-
-:root {
     --primary: #{map.get($pallete, "primary")};
     --secondary: #{map.get($pallete, "secondary")};
     --accent: #{map.get($pallete, "accent")};
+    --lightest: #{map.get($pallete, "lightest")};
+    --lighter: #{map.get($pallete, "lighter")};
     --light: #{map.get($pallete, "light")};
     --dark: #{map.get($pallete, "dark")};
-    --lighter: #{map.get($pallete, "lighter")};
     --darker: #{map.get($pallete, "darker")};
-    --background: #{map.get($pallete, "background")};
-    --foreground: #{map.get($pallete, "foreground")};
+    --darkest: #{map.get($pallete, "darkest")};
 }
