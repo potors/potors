@@ -4,7 +4,7 @@
 
 <Header />
 <main>
-    <img src="profile.png" alt="profile" />
+    <img src="profile_x1024.png" alt="profile" />
     <Social colorful list size="3.125rem" />
 </main>
 
