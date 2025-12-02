@@ -3,8 +3,9 @@
         GithubLogo as Github,
         TelegramLogo as Telegram,
         InstagramLogo as Instagram,
-        At as Email,
+       At as Email,
         Coffee as Kofi,
+        ReadCvLogo as Resume
     } from "phosphor-svelte";
 
     const contacts = {
