@@ -1,0 +1,112 @@
+@font-face {
+  font-family: Iosevka;
+  src: url("regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Iosevka;
+    src: url("bold.ttf") format("truetype");
+
+    font-weight: bold;
+    font-stretch: semi-expanded;
+}
+
+:root {
+    --rosewater: 245, 224, 220;
+    --lavender: 180, 190, 254;
+    --flamingo: 242, 205, 205;
+    --pink: 245, 194, 231;
+    --mauve: 203, 166, 247;
+    --red: 243, 139, 168;
+    --maroon: 235, 160, 172;
+    --peach: 250, 179, 135;
+    --yellow: 249, 226, 175;
+    --green: 166, 227, 161;
+    --teal: 148, 226, 213;
+    --sky: 137, 220, 235;
+    --blue: 137, 180, 250;
+    --sapphire: 116, 199, 236;
+    --text: 205, 214, 244;
+    --subtext1: 186, 194, 222;
+    --subtext0: 166, 173, 200;
+    --overlay2: 147, 153, 178;
+    --overlay1: 127, 132, 156;
+    --overlay0: 108, 112, 134;
+    --surface2: 88, 91, 112;
+    --surface1: 69, 71, 90;
+    --surface0: 49, 50, 68;
+    --base: 30, 30, 46;
+    --mantle: 24, 24, 37;
+    --crust: 17, 17, 27;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Iosevka;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    place-items: center;
+
+    overflow: hidden;
+
+    background: rgb(var(--mantle));
+}
+
+h1 {
+    font: semi-expanded bold 3rem Iosevka;
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: rgb(var(--base));
+
+    text-shadow:
+        0px 0px 4px  rgba(var(--overlay1), 15%),
+        0px 0px 12px rgba(var(--overlay1), 30%);
+}
+
+svg {
+    min-width: 60ch;
+    max-height: 100%;
+
+    animation: 36s spin infinite ease-in-out;
+
+    filter: drop-shadow(0px 0px 8px rgba(var(--overlay2), 50%));
+}
+
+#a {
+    animation: 54s rainbow infinite linear;
+}
+
+#b { visibility: hidden }
+
+@keyframes spin {
+    from { rotate: 0deg }
+    to { rotate: 360deg }
+}
+
+@keyframes rainbow {
+    from { fill: rgb(var(--red)) }
+    12% { fill: rgb(var(--peach)) }
+    25% { fill: rgb(var(--yellow)) }
+    37% { fill: rgb(var(--green)) }
+    50% { fill: rgb(var(--sky)) }
+    62% { fill: rgb(var(--blue)) }
+    75% { fill: rgb(var(--lavender)) }
+    87% { fill: rgb(var(--mauve)) }
+    to { fill: rgb(var(--red)) }
+}
