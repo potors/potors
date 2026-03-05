@@ -1,7 +1,5 @@
 # Welcome to my little space!
 
-<sup>Jump to [contact](#contact)</sup>
-
 Yeah man, I'm a dev.
 
 # Experience
@@ -54,17 +52,18 @@ Yeah man, I'm a dev.
 
 # Contact
 
-Message me within my [website][contact] or [email me][email] yourself!  
+<!-- Message me within my [website][contact] or send an [email][email] yourself! -->
+You can [mail me][email] or send a message in both [instagram] and [telegram]
 
 [![email][badge_email]][email]
 [![telegram][badge_telegram]][telegram]
 [![instagram][badge_instagram]][instagram]
 
 <!-- [contact]: https://pitol.dev/contact -->
-[contact]: https://potors.vercel.app/contact
-[email]: mailto:felpofo@proton.me
-[telegram]: https://t.me/powtors
-[instagram]: https://instagram.com/powtors
+[contact]: https://pitol.dev
+[email]: mailto:contact@pitol.dev
+[telegram]: https://t.me/pitol_dev
+[instagram]: https://instagram.com/pitol.dev
 
 [badge_email]: https://img.shields.io/badge/email-005FF9?style=for-the-badge&logo=maildotru&logoColor=fff
 [badge_telegram]: https://img.shields.io/badge/telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=fff
