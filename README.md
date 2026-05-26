@@ -53,7 +53,7 @@ Yeah man, I'm a dev.
 # Contact
 
 <!-- Message me within my [website][contact] or send an [email][email] yourself! -->
-You can [mail me][email] or send a message in both [instagram] and [telegram]
+You can [mail me][email] or send a message on [instagram] or [telegram]
 
 [![email][badge_email]][email]
 [![telegram][badge_telegram]][telegram]
